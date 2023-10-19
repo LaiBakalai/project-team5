@@ -21,6 +21,7 @@ ul {
   --lightwhite: #FFF5F6;
   --black: #000;
   --velvet: #d41443;
+  --gray: #907e82;
 }
 
 .contact {
@@ -109,7 +110,7 @@ ul {
 }
 
 .contact__p {
-  color: #907e82;
+  color: var(--gray);
   font-family: "DM Sans";
   font-size: 12px;
   font-weight: 500;
@@ -149,7 +150,7 @@ ul {
 }
 
 .contact__address-link {
-  color: #907e82;
+  color: var(--gray);
   font-family: DM Sans;
   font-size: 12px;
   font-style: normal;
