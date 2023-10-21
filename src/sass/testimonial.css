@@ -8,7 +8,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+ul {
+  list-style-type: none;
+}
 :root {
   --iris: #4d5ae5;
   --ocean: #404bbf;
@@ -92,4 +94,26 @@
   font-style: normal;
   font-weight: 500;
   line-height: 186%;
+  margin-bottom: 32px;
+}
+.testi-icon-dots2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.testi-icon-dots-nav {
+  display: flex;
+  align-items: center;
+  column-gap: 24px;
+  justify-content: center;
+}
+.testi-icon-dots1 {
+  display: flex;
+  height: 12px;
+  width: 12px;
+  margin: 0 auto;
+}
+.team-icon-dots1:hover {
+  background-image: url(/src/images/icons/icons.svg#house);
 }
