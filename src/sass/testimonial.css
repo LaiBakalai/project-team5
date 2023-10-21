@@ -1,0 +1,95 @@
+/*Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=Poppins:wght@300;400;500;600;700;800&family=Raleway:wght@800&display=swap');
+/*Google Fonts*/
+
+* {
+  font-family: 'DM Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --iris: #4d5ae5;
+  --ocean: #404bbf;
+  --navyblue: #2e2f42;
+  --green: #31d0aa;
+  --slate: #434455;
+  --lightslate: #8e8f99;
+  --cornflower: #e7e9fc;
+  --cloud: #f4f4fd;
+  --navyblue-modal: rgba(46, 47, 66, 0.4);
+  --grey: #fafafa;
+  --white: #fff;
+  --navyblue-modal: rgba(46, 47, 66, 0.4);
+  --lightgray: #f4f4fd;
+}
+
+.testimonial-container {
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+
+  @media screen and (min-width: 320px) {
+    max-width: 320px;
+  }*/
+}
+
+.testimonial {
+  position: relative;
+  max-width: 968px;
+  width: 100%;
+  background-color: var(--white);
+}
+.testi-slide {
+  /*
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  */
+}
+.testi-image {
+  margin: 0 auto;
+  display: flex;
+  height: 85px;
+  width: 85px;
+  background: var(--cloud);
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-bottom: 16px;
+}
+.testimonial-icons {
+  float: left;
+}
+.testi-icon {
+  width: 54px;
+  height: 40px;
+  position: absolute;
+  margin-left: -37px;
+  margin-top: -15px;
+}
+.testi-paragraph {
+  background-color: var(--ocean);
+  color: #000;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 186%;
+  letter-spacing: 0.64px;
+  padding: 47px 116px;
+}
+.testi-name {
+  display: flex;
+  justify-content: center;
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 186%;
+}
