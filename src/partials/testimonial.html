@@ -1,75 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ice Cream Pink</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:ital,wght@0,400;0,500;1,700&display=swap"
-        rel="stylesheet">
-    <include src="../index.html"></include>
-    <link rel="stylesheet" href="../sass/testimonial.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../sass/testimonial.css" />
+
 </head>
 
 <body>
-    <section class="section testimonial-container">
-        <div class="testimonial">
-            <div class="testi-content">
-                <div class="testi-slide">
-                    <img src="../images/testimonials1.jpg" alt="" class="testi-image">
-                    <div class="testi-paragraph">
-                        <div class="testimonial-icons">
-                            <svg class="testi-icon" width="64" height="64">
-                                <use href="../images/icons/icons.svg#quote"></use>
-                            </svg>
-                        </div>
-                        <p class="">I love visiting your cafe. You Prepare the most delicious ice cream in
-                            Los Angeles in addition, you have
-                            a beautiful serving, cozy atmosphere and polite staff.</p>
-                    </div>
-                    <svg class="testi-icon-dots2" width="64" height="64">
-                        <use href="../images/icons/icons.svg#dots2"></use>
-                    </svg>
-                    <span class="testi-name">Emily, Los Angeles</span>
-                    <ul class="testi-icon-dots-nav">
-                        <li class="testi-icon-dots">
-                            <svg class="testi-icon-dots1" width="64" height="64">
-                                <use href="../images/icons/icons.svg#dots1"></use>
-                            </svg>
-                        </li>
-                        <li class="testi-icon-dots">
-                            <svg class="testi-icon-dots1" width="64" height="64">
-                                <use href="../images/icons/icons.svg#dots1"></use>
-                            </svg>
-                        </li>
-                        <li class="testi-icon-dots">
-                            <svg class="testi-icon-dots1" width="64" height="64">
-                                <use href="../images/icons/icons.svg#dots1"></use>
-                            </svg>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <!--
-        <div class="container review-container">
-            <ul class="customer-review">
-                <li class="slide">
-                    <img src="../images/testimonials1.jpg" alt="testimonials1" class="image">
-                    I love visiting your cafe. You Prepare the most delicious ice cream in
-                    Los Angeles in addition, you have
-                    a beautiful serving, cozy atmosphere and polite staff.
-                </li>
-                <li></li>
-                <li></li>
-                <li></li>
 
-            </ul>
-        </div>-->
-    </section>
+    <div class="slideshow-container">
+
+        <div class="mySlides">
+            <img src="../images/testimonials1.jpg" alt="" class="testi-image">
+            <div class="testi-paragraph">
+                <div class="testimonial-icons">
+                    <svg class="testi-icon" width="64" height="64">
+                        <use href="../images/icons/icons.svg#quote"></use>
+                    </svg>
+                </div>
+                <p class="">I love visiting your cafe. You Prepare the most delicious ice cream in
+                    Los Angeles in addition, you have
+                    a beautiful serving, cozy atmosphere and polite staff.</p>
+            </div>
+            <svg class="testi-icon-dots2" width="64" height="64">
+                <use href="../images/icons/icons.svg#dots2"></use>
+            </svg>
+            <p class="author">-Emily, Los Angeles</p>
+        </div>
+
+        <div class="mySlides">
+            <img src="../images/testimonials2.jpg" alt="" class="testi-image">
+            <div class="testi-paragraph">
+                <div class="testimonial-icons">
+                    <svg class="testi-icon" width="64" height="64">
+                        <use href="../images/icons/icons.svg#quote"></use>
+                    </svg>
+                </div>
+                <p class="">I love visiting your cafe. You Prepare the most delicious ice cream in
+                    Los Angeles in addition, you have
+                    a beautiful serving, cozy atmosphere and polite staff.</p>
+            </div>
+            <svg class="testi-icon-dots2" width="64" height="64">
+                <use href="../images/icons/icons.svg#dots2"></use>
+            </svg>
+            <p class="author">- Emily, Los Angeles</p>
+        </div>
+
+        <div class="mySlides">
+            <img src="../images/testimonials3.jpg" alt="" class="testi-image">
+            <div class="testi-paragraph">
+                <div class="testimonial-icons">
+                    <svg class="testi-icon" width="64" height="64">
+                        <use href="../images/icons/icons.svg#quote"></use>
+                    </svg>
+                </div>
+                <p class="">I love visiting your cafe. You Prepare the most delicious ice cream in
+                    Los Angeles in addition, you have
+                    a beautiful serving, cozy atmosphere and polite staff.</p>
+            </div>
+            <svg class="testi-icon-dots2" width="64" height="64">
+                <use href="../images/icons/icons.svg#dots2"></use>
+            </svg>
+            <p class="author">- Emily, Los Angeles</p>
+        </div>
+
+    </div>
+
+    <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
     <script src="../js/testimonial.js"></script>
 </body>
 
