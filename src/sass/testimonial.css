@@ -71,7 +71,8 @@ ul {
 /* Add a background color to the active dot/circle */
 .active,
 .dot:hover {
-  background-color: #717171;
+  background: #d31342;
+  background-image: url(../images/icons/icons.svg#house);
 }
 
 /* Add an italic font style to all quotes */
@@ -97,6 +98,9 @@ q {
   border-radius: 50%;
 }
 .testi-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 968px;
   background-color: var(--ocean);
   color: #000;
@@ -125,7 +129,7 @@ q {
 }
 .testimonial-icons {
   position: absolute;
-  margin-left: -45px;
+  margin-left: -750px;
   transform: translateY(-45%);
   @media screen and (max-width: 768px) {
     margin-left: -55px;
@@ -149,9 +153,18 @@ q {
   }
 }
 .testi-paragraph {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   @media screen and (max-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   @media screen and (max-width: 320px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
