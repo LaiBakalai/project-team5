@@ -16,9 +16,17 @@ ul {
   padding: 0;
 }
 
+:root {
+  --white: #fff;
+  --lightwhite: #FFF5F6;
+  --black: #000;
+  --velvet: #d41443;
+  --gray: #907e82;
+}
+
 .contact {
   padding: 60px 0 40px 0;
-  background-image: linear-gradient(to bottom, #fff 25%, #FFF5F6 25%, #FFF5F6 70%);
+  background-image: linear-gradient(to bottom, var(--white) 25%, var(--lightwhite) 25%, var(--lightwhite) 70%);
 }
 
 .container {
@@ -44,11 +52,11 @@ ul {
   height: 528px;
   flex-shrink: 0; */
 
-  background-color: #fff;
+  background-color: var(--white);
   padding: 40px 32px;
 
   border-radius: 24px;
-  background: #fff;
+  background: var(--white);
   box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
 }
 
@@ -66,7 +74,7 @@ ul {
   flex-shrink: 0;
   margin-bottom: 20px;
 
-  color: #fff;
+  color: var(--white);
   text-align: center;
   font-family: "DM Sans";
   font-size: 12px;
@@ -93,20 +101,18 @@ ul {
 .contact__h4 {
   margin-bottom: 8px;
 
-  color: #000;
+  color: var(--black);
   font-family: "DM Sans";
   font-size: 12px;
-  font-style: normal;
   font-weight: 500;
   line-height: 186%; /* 22.32px */
   letter-spacing: 0.48px;
 }
 
 .contact__p {
-  color: #907e82;
+  color: var(--gray);
   font-family: "DM Sans";
   font-size: 12px;
-  font-style: normal;
   font-weight: 500;
   line-height: 18px; /* 150% */
   letter-spacing: 0.48px;
@@ -123,10 +129,8 @@ ul {
 }
 
 .shop-hours__day {
-  color: #000;
-  font-family: DM Sans;
+  color: var(--black);
   font-size: 12px;
-  font-style: normal;
   font-weight: 500;
   line-height: 186%; /* 22.32px */
 }
@@ -146,7 +150,7 @@ ul {
 }
 
 .contact__address-link {
-  color: #907e82;
+  color: var(--gray);
   font-family: DM Sans;
   font-size: 12px;
   font-style: normal;
@@ -157,7 +161,7 @@ ul {
 }
 
 .contact__address-link:hover {
-  color: #d41443;
+  color: var(--velvet);
 }
 
 .contact__button {
@@ -182,10 +186,10 @@ ul {
   height: 44px;
   border: none;
   border-radius: 22px;
-  background: #d41342;
+  background: var(--velvet);
 
   /* button text */
-  color: #fff;
+  color: var(--white);
   text-align: center;
   font-family: DM Sans;
   font-size: 16px;
@@ -196,7 +200,7 @@ ul {
 }
 
 .contact__button-title:hover {
-  background: #c91340;
+  background: var(--velvet);
 }
 
 .contact__button-icon {
@@ -204,16 +208,16 @@ ul {
   height: 16px;
   padding-top: 3px;
   flex-shrink: 0;
-  fill: white;
+  fill: var(--white);
 }
 
 .franchise-button {
-  background: white;
-  color: #d41443;
+  background: var(--white);
+  color: var(--velvet);
 }
 
 .franchise-icon {
-  fill: #d41443;
+  fill: var(--velvet);
 }
 
 .franchise-button:hover {
@@ -227,7 +231,7 @@ ul {
 
   .contact {
     padding: 80px 0 40px 0;
-    background-image: linear-gradient(to bottom, #fff 50%,#FFF5F6 50%);
+    background-image: linear-gradient(to bottom, var(--white) 50%,var(--lightwhite) 50%);
   }
 
   .contact__card {
@@ -317,9 +321,9 @@ ul {
   .contact {
     padding: 120px 0;
     background-image: linear-gradient(to bottom,
-      #fff 30%,
-      #FFF5F6 30%,
-      #FFF5F6 70%);
+      var(--white) 30%,
+      var(--lightwhite) 30%,
+      var(--lightwhite) 70%);
   }
 
   .contact__content {
