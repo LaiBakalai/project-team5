@@ -88,43 +88,30 @@ q {
 .testi-image {
   margin: 0 auto;
   display: flex;
+  align-items: center;
+  justify-content: center;
   height: 85px;
   width: 85px;
   background: var(--cloud);
-  align-items: center;
-  justify-content: center;
+
   flex-shrink: 0;
   margin-bottom: 16px;
   border-radius: 50%;
 }
 .testi-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin: 0 auto;
+  background-color: var(--grey);
   width: 968px;
-  background-color: var(--ocean);
-  color: #000;
-  text-align: center;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 186%;
-  letter-spacing: 0.64px;
-  margin: 0 116px;
   padding: 47px 116px 47px 108px;
+
   @media screen and (max-width: 768px) {
     width: 620px;
-    font-size: 14px;
-    padding: 37px 64px;
-    line-height: 214%;
-    letter-spacing: 0.56px;
-    margin: 0 74px;
+    padding: 37px 64px 44px;
   }
   @media screen and (max-width: 320px) {
-    width: 280px;
-    margin: 0 20px;
-    font-size: 12px;
-    line-height: 260%;
-    letter-spacing: 0.48px;
+    width: 281px;
+    margin: 0 auto;
+    padding: 47px 65px 47px 58px;
   }
 }
 .testimonial-icons {
@@ -132,15 +119,15 @@ q {
   margin-left: -750px;
   transform: translateY(-45%);
   @media screen and (max-width: 768px) {
-    margin-left: -55px;
-    transform: translateY(-40%);
+    margin-left: -550px;
+    transform: translateY(-70%);
   }
 
   @media screen and (max-width: 320px) {
-    margin-left: -55px;
+    margin-left: -500px;
     transform: translateY(-40%);
   }
-}
+} /*
 .testi-icon {
   width: 54px;
   height: 40px;
@@ -151,20 +138,29 @@ q {
   @media screen and (max-width: 320px) {
     width: 54px;
   }
-}
+}*/
 .testi-paragraph {
-  display: flex;
+  display: inline;
   justify-content: center;
-  align-items: center;
+  width: 968px;
+  border-bottom: 2px solid #e1e1e1;
+  color: #000;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 186%;
+  letter-spacing: 0.64px;
+  margin: 0 auto;
   @media screen and (max-width: 768px) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 186%;
+    letter-spacing: 0.64px;
   }
 
   @media screen and (max-width: 320px) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-size: 12px;
+    line-height: 260%;
+    letter-spacing: 0.48px;
   }
 }
