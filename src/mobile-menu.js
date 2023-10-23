@@ -26,7 +26,6 @@
       openMenuBtn.setAttribute('aria-expanded', false);
       bodyScrollLock.enableBodyScroll(document.body);
     });
-  })();
   
 
   const mobileMenu = document.querySelector('.js-menu-container');
