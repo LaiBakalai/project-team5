@@ -1,0 +1,117 @@
+// global declaration
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+// hamburger window
+.menu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-left: auto;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    color: var(--navyblue, #2e2f42);
+
+}
+
+.hamburger-close-button {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    padding: 0;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+
+.buy-now__button{
+    margin-top: 58px;
+    width:209px;
+    height: 44px;
+    margin-bottom: 20px;
+    border-radius: 22px;
+    background: #FFF;
+    border: 0;
+    color: #D41443;
+    text-align: center;
+    font-family: DM Sans;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+
+    @media screen and (min-width: 768px) {
+        width: 186px;
+   
+    }
+}
+
+.buy-now__icon {
+    margin-left: 16px;
+    width: 4.679px;
+    height: 8px;
+
+    @media screen and (min-width: 768px) {
+        width: 5.258px;
+    }   
+}
+
+.hamburger-menu-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-inline-start: 0px;
+}
+
+.hamburger-menu-item {
+    padding-left: 20px;
+    padding-top: 13px;
+    padding-bottom: 11px;
+    border: 1px solid rgba(250, 250, 250, 0.1);
+}
+
+.hamburger-menu-link {
+    color: #FFF;
+    font-family: DM Sans;
+    font-size: 14px;
+    font-weight: 700;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hamburger-menu-link:hover,
+.hamburger-menu-link:focus {
+    color: #D41443;
+}
+
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    align-items: center;
+    width: 250px;
+    height: 502px;
+    background-color: #E17992;
+  
+    transform: translateX(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 768px) {
+        width:254px ;
+        height: 1020px;
+    }
+}
+
+.menu-container.is-open {
+    transform: translateX(0);
+}
