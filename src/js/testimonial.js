@@ -4,14 +4,10 @@ showSlides(slideIndex);
 function plusSlides(n) {
   showSlides((slideIndex += n));
 }
-
 function currentSlide(n) {
   showSlides((slideIndex = n));
 }
-
 function showSlides(n) {
-  const house = document.querySelector('span');
-  house.src = '../images/icons/icons.svg#house';
   var i;
   var slides = document.getElementsByClassName('mySlides');
   var dots = document.getElementsByClassName('dot');

@@ -76,7 +76,8 @@ ul {
 /* Add a background color to the active dot/circle */
 .active,
 .testi-icon-dots1:hover {
-  background-color: #d31342;
+  background: url('../images/house.png');
+  background-repeat: no-repeat;
 }
 
 /* Add an italic font style to all quotes */
@@ -130,18 +131,7 @@ q {
     margin-left: -10px;
     transform: translateY(-40%);
   }
-} /*
-.testi-icon {
-  width: 54px;
-  height: 40px;
-  @media screen and (max-width: 768px) {
-    width: 60.3px;
-  }
-
-  @media screen and (max-width: 320px) {
-    width: 54px;
-  }
-}*/
+}
 .testi-paragraph {
   display: inline;
   justify-content: center;
