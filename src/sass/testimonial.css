@@ -81,7 +81,10 @@ ul {
   transition: background-color 0s ease;
   border-radius: 0;
 }
-
+.testi-icon {
+  height: 15px;
+  width: 15px;
+}
 .testi-image {
   margin: 0 auto;
   display: flex;
