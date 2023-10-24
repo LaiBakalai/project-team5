@@ -21,14 +21,15 @@ ul {
     list-style: none;
 }
 
+/*
 .container {
     max-width: 425px;
     margin: 0 auto;
     padding: 0 15px;
 }
-
+*/
 .hero {
-    background: #ffb8ca;
+    background: var(--bg-header-hero);
     height: 440px;
     max-width: 100%;
     overflow-x: hidden;
