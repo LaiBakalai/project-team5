@@ -1,0 +1,2 @@
+!function(){var e=document.getElementById("icecream-toggleButton"),t=document.getElementById("icecream-content"),c=document.getElementById("icecream-buttonImage"),n=!1;e.addEventListener("click",(function(){n?(t.classList.remove("opened"),t.classList.add("retracted"),c.style.transform="rotate(0deg)"):(t.classList.remove("retracted"),t.classList.add("opened"),c.style.transform="rotate(180deg)"),n=!n}))}();
+//# sourceMappingURL=index.ef7c1d75.js.map

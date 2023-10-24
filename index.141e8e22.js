@@ -1,0 +1,2 @@
+!function(){var e=document.getElementById("icecoffee-toggleButton"),t=document.getElementById("icecoffee-content"),c=document.getElementById("icecoffee-buttonImage"),n=!1;e.addEventListener("click",(function(){n?(t.classList.remove("opened"),t.classList.add("retracted"),c.style.transform="rotate(0deg)"):(t.classList.remove("retracted"),t.classList.add("opened"),c.style.transform="rotate(180deg)"),n=!n}))}();
+//# sourceMappingURL=index.141e8e22.js.map
