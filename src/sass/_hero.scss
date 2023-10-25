@@ -1,3 +1,10 @@
+.hero {
+    background: var(--bg-header-hero);
+    height: 440px;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 .hero-link {
     text-decoration: none;
     list-style: none;
@@ -14,8 +21,6 @@
     letter-spacing: 1.04px;
     padding-top: 136px;
     margin-bottom: 20px;
-    // position: absolute;
-    // z-index: 10;
 }
 
 .highlight {
@@ -29,8 +34,6 @@
     display: flex;
     flex-direction: row;
     gap: 9.2px;
-    // position: absolute;
-    // z-index: 10;
 }
 
 .hero-button-1 {
@@ -150,11 +153,6 @@
         right: 12px;
     }
 
-    // .hero-numbers-list {
-    //     top: 72px;
-    //     right: 35px;
-    // }
-
     .hero-numbers-items {
         position: relative;
     }
@@ -226,9 +224,7 @@
     .background-picture-milk {
         display: flex;
         position: absolute;
-        width: 152px;
-        height: 154px;
-        bottom: 16px;
+        bottom: -310px;
         animation-duration: 1s;
         animation-timing-function: ease-in-out;
         animation-delay: 0s;
@@ -256,8 +252,8 @@
     .background-picture-woman {
         display: flex;
         position: absolute;
-        width: 190px;
-        height: 150px;
+        // width: 190px;
+        // height: 150px;
         right: 17px;
         top: 183px;
         animation-duration: 1s;
@@ -281,7 +277,7 @@
 }
 
 
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1280px) {
     .hero {
         height: 567px;
         max-width: 100%;
@@ -297,54 +293,32 @@
     }
 
     .hero-title {
-        font-family: Titan One;
-        text-transform: uppercase;
-        color: #FFF;
         font-size: 38px;
-        font-weight: 400;
-        line-height: normal;
         letter-spacing: 1.52px;
         padding-top: 60px;
         margin-bottom: 24px;
     }
 
     .highlight {
-        color: #d41443;
         font-size: 58px;
-        line-height: 90.5%;
         letter-spacing: 2.32px;
     }
 
     .hero-buttons {
-        display: flex;
-        flex-direction: row;
         gap: 12px;
-
     }
 
     .hero-button-1 {
         width: 107px;
-        color: #FFF;
-        background-color: #d41443;
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     .hero-button-2 {
         width: 138px;
-        color: #d41443;
-        background-color: #FFF;
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     .button-icon {
         height: 40px;
-        border-radius: 20px;
-        outline: none;
-        border: unset;
-        text-align: center;
         font-size: 14px;
-        font-family: DM Sans;
-        cursor: pointer;
     }
 
     .hero-numbers {
@@ -378,7 +352,6 @@
     }
 
     .hero-text {
-        position: absolute;
         left: 229px;
         bottom: -485px;
     }
@@ -396,18 +369,12 @@
         height: 26px;
     }
 
-    // .background-pictures {
-    //     position: absolute;
-    // }
-
     .background-picture-milk {
-        bottom: 60px;
-        width: 213px;
-        height: 216px;
+        bottom: -508px;
     }
 
     .background-picture-ice-cream {
-        right: 329px;
+        right: 410px;
         top: 10px;
         width: 236px;
         height: 557px;
@@ -417,16 +384,13 @@
         width: 534px;
         height: 534px;
         border-radius: 534px;
-        right: 160px;
+        right: 215px;
         bottom: -235px;
-
     }
 
     .background-picture-woman {
-        right: 23px;
+        right: 35px;
         top: 326px;
-        width: 304px;
-        height: 241px;
     }
 }
 
