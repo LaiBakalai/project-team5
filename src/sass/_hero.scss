@@ -1,3 +1,8 @@
+.hero-link {
+    text-decoration: none;
+    list-style: none;
+    color: inherit;
+}
 
 .hero-title {
     font-family: Titan One;
@@ -128,6 +133,7 @@
     .hero {
         height: 333px;
         overflow-x: unset;
+        padding: 0px;
     }
 
     .hero-numbers-container {
@@ -222,7 +228,7 @@
         position: absolute;
         width: 152px;
         height: 154px;
-        bottom: -317px;
+        bottom: 16px;
         animation-duration: 1s;
         animation-timing-function: ease-in-out;
         animation-delay: 0s;
@@ -279,6 +285,7 @@
     .hero {
         height: 567px;
         max-width: 100%;
+        padding: 0px;
         // background-image: url(../images/hero-images/milk.png), 
         //                     url(../images/hero-images/ice-cream.png),
         //                     url(../images/hero-images/woman.png);
@@ -372,8 +379,8 @@
 
     .hero-text {
         position: absolute;
-        left: 234px;
-        bottom: -500px;
+        left: 229px;
+        bottom: -485px;
     }
 
     .hero-text-description {
@@ -394,7 +401,7 @@
     // }
 
     .background-picture-milk {
-        bottom: -520px;
+        bottom: 60px;
         width: 213px;
         height: 216px;
     }
@@ -410,13 +417,13 @@
         width: 534px;
         height: 534px;
         border-radius: 534px;
-        right: 155px;
+        right: 160px;
         bottom: -235px;
 
     }
 
     .background-picture-woman {
-        right: 17px;
+        right: 23px;
         top: 326px;
         width: 304px;
         height: 241px;
