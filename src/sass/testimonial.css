@@ -147,6 +147,18 @@ body {
   background: url('../images/icons/house.svg');
   background-repeat: no-repeat;
 }
+.testi-spacer {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  @media (max-width: 768px) {
+    margin-top: 4px;
+    margin-bottom: 16px;
+  }
+  @media (max-width: 320px) {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+}
 .testi-icon2 {
   width: 15px;
   height: 15px;
