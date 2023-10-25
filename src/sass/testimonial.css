@@ -10,7 +10,7 @@
 ul {
   list-style-type: none;
 }
-.container {
+.testi-container {
   min-width: 1200px;
   @media screen and (max-width: 768px) {
     min-width: 768px;
