@@ -1,1 +1,36 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.list {
+    list-style: none;
+}
+
+/*
+.container {
+    max-width: 425px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+*/
+.hero {
+    background: var(--bg-header-hero);
+    height: 440px;
+    max-width: 100%;
+    overflow-x: hidden;
+}
