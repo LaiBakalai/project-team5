@@ -6,6 +6,7 @@
 section, .header-nav{
     padding: 0 16px;
     display: flex;
+    z-index: 1;
 }
 
 .header-nav{
@@ -50,7 +51,6 @@ section, .header-nav{
     color: #fff;
     padding: 0;
     margin-left: 115px;
-    z-index: 1;
     cursor: pointer;
 
     @media screen and (min-width: 768px){
@@ -176,6 +176,7 @@ section, .header-nav{
     transition-duration: 250ms;
     transition-timing-function: ease-in-out;
     transform: translateX(100%);
+    z-index: 999;
 }
 
 .mobile-nav {
