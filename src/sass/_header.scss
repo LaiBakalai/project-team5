@@ -45,11 +45,12 @@ section, .header-nav{
     display: flex;
     flex-direction: row;
     text-align: center;
-    justify-content: center;
+    align-items: center;
     gap: 35px;
     color: #fff;
     padding: 0;
     margin-left: 115px;
+    z-index: 1;
     cursor: pointer;
 
     @media screen and (min-width: 768px){
