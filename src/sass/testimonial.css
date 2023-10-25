@@ -82,8 +82,20 @@ ul {
   border-radius: 0;
 }
 .testi-icon {
-  height: 15px;
-  width: 15px;
+  width: 54px;
+  height: 40px;
+  @media screen and (max-width: 768px) {
+    width: 60.353px;
+    height: 40px;
+  }
+  @media screen and (max-width: 320px) {
+    width: 54px;
+    height: 40px;
+  }
+}
+.testi-icon2 {
+  width: 12px;
+  height: 12px;
 }
 .testi-image {
   margin: 0 auto;
@@ -109,6 +121,8 @@ ul {
     padding: 37px 64px 44px;
   }
   @media screen and (max-width: 320px) {
+    position: relative;
+    z-index: 0;
     width: 281px;
     margin: 0 auto;
     padding: 47px 65px 47px 58px;
@@ -124,7 +138,9 @@ ul {
     top: 40px;
   }
   @media screen and (max-width: 320px) {
-    left: -65px;
+    position: relative;
+    z-index: -1;
+    left: -67px;
     top: 30px;
   }
 }
@@ -148,7 +164,6 @@ ul {
   }
 
   @media screen and (max-width: 320px) {
-    z-index: 100;
     font-size: 12px;
     line-height: 260%;
     letter-spacing: 0.48px;
@@ -170,6 +185,7 @@ ul {
   }
 
   @media screen and (max-width: 320px) {
+    z-index: 1;
     font-size: 14px;
     font-weight: 500;
     line-height: 186%;
