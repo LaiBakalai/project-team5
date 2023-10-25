@@ -44,11 +44,12 @@ section, .header-nav{
     list-style: none;
     display: flex;
     flex-direction: row;
+    text-align: center;
+    justify-content: center;
     gap: 35px;
     color: #fff;
     padding: 0;
     margin-left: 115px;
-    text-align: center;
     cursor: pointer;
 
     @media screen and (min-width: 768px){
