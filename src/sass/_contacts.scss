@@ -18,7 +18,7 @@ ul {
 
 :root {
   --white: #fff;
-  --lightwhite: #FFF5F6;
+  --lightwhite: #fff5f6;
   --black: #000;
   --velvet: #d41443;
   --gray: #907e82;
@@ -26,7 +26,12 @@ ul {
 
 .contact {
   padding: 60px 0 40px 0;
-  background-image: linear-gradient(to bottom, var(--white) 25%, var(--lightwhite) 25%, var(--lightwhite) 70%);
+  background-image: linear-gradient(
+    to bottom,
+    var(--white) 25%,
+    var(--lightwhite) 25%,
+    var(--lightwhite) 70%
+  );
 }
 
 .container {
@@ -76,7 +81,7 @@ ul {
 
   color: var(--white);
   text-align: center;
-  font-family: "DM Sans";
+  font-family: 'DM Sans';
   font-size: 12px;
   font-style: normal;
   text-transform: uppercase;
@@ -102,7 +107,7 @@ ul {
   margin-bottom: 8px;
 
   color: var(--black);
-  font-family: "DM Sans";
+  font-family: 'DM Sans';
   font-size: 12px;
   font-weight: 500;
   line-height: 186%; /* 22.32px */
@@ -111,7 +116,7 @@ ul {
 
 .contact__p {
   color: var(--gray);
-  font-family: "DM Sans";
+  font-family: 'DM Sans';
   font-size: 12px;
   font-weight: 500;
   line-height: 18px; /* 150% */
@@ -231,7 +236,11 @@ ul {
 
   .contact {
     padding: 80px 0 40px 0;
-    background-image: linear-gradient(to bottom, var(--white) 50%,var(--lightwhite) 50%);
+    background-image: linear-gradient(
+      to bottom,
+      var(--white) 50%,
+      var(--lightwhite) 50%
+    );
   }
 
   .contact__card {
@@ -313,17 +322,19 @@ ul {
   }
 }
 
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1280px) {
   .container {
-    min-width: 1158px;
+    min-width: 1280px;
   }
 
   .contact {
     padding: 120px 0;
-    background-image: linear-gradient(to bottom,
+    background-image: linear-gradient(
+      to bottom,
       var(--white) 30%,
       var(--lightwhite) 30%,
-      var(--lightwhite) 70%);
+      var(--lightwhite) 70%
+    );
   }
 
   .contact__content {
