@@ -55,10 +55,32 @@
             </div>
         </div>
         <div class="background-pictures">
-            <img class="background-picture-milk" src="./images/hero-images/milk.png" alt="milk">
-            <img class="background-picture-ice-cream" src="./images/hero-images/ice-cream.png" alt="ice-cream">
+            <img 
+                class="background-picture-milk"
+                srcset="./images/hero-images/milk-tb.png 152w, 
+            	        ./images/hero-images/milk-pc.png 213w" 
+                sizes="(min-width: 1280px) 213px, (min-width: 768px) 152px" 
+                src="./images/hero-images/milk-tb.png" 
+                alt="milk" 
+            />
+            <img 
+                class="background-picture-ice-cream" 
+                srcset="./images/hero-images/ice-cream-pc.png 236w, 
+                        ./images/hero-images/ice-cream-tb.png 143w,
+                        ./images/hero-images/ice-cream-mb.png 171w" 
+                sizes="(min-width: 1280px) 236px, (min-width: 768px) 143px, (min-width: 320px) 171w"
+                src="./images/hero-images/ice-cream-mb.png" 
+                alt="ice-cream" 
+            />
             <div class="background-picture-circle"></div>
-            <img class="background-picture-woman" src="./images/hero-images/woman.png" alt="woman eating ice-cream">
+            <img 
+                class="background-picture-woman" 
+                srcset="./images/hero-images/woman-pc.png 304w,
+                        ./images/hero-images/woman-tb.png 190w"
+                sizes="(min-width: 1280px) 304px, (min-width: 768px) 190px"
+                src="./images/hero-images/ice-cream-tb.png" 
+                alt="woman eating ice-cream" 
+            />
         </div>
     </div>
 </section>
