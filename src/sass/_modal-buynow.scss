@@ -1,5 +1,6 @@
 .backdrop {
     position: fixed;
+    z-index: 10;
     top: 0;
     left: 0;
     width: 100%;
@@ -13,7 +14,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    height: 100%;
+    height: auto;
     width: 50%;
     background-color: white;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
@@ -31,10 +32,27 @@
    
     @media screen and (min-width: 1280px) {
         height: auto;
-        width: 1200px;
+        width: auto;
     }
 }
 
+.modal-list-item {
+    cursor: pointer;
+}
+
+.modal-list-item {
+    padding-top: 148px;
+    position: relative;
+    overflow: hidden;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 158px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        padding-top: 150px;
+    }
+}
 .backdrop.is-hidden .modal {
     transform: translate(-50%, -50%) scale(0);
 }
@@ -154,7 +172,8 @@
 
         }
 }
-form-label-text
+
+.form-label-text
 .form-label-textarea {
     padding-left: 16px;
     resize: none;
@@ -220,16 +239,13 @@ form-label-text
     background-color: #C2E297;
 }
 
-.products-list-item {
-    cursor: pointer;
-}
 
 .icecream-card {
     background: #ffb8ca;
 }
 
 .icecream-card::before {
-    content: url(/src/images/products/ice-cream-mobile.png);
+    content: url(/src/images/products/ice-cream-MB.png);
     position: absolute;
     top: 8px;
 
@@ -240,7 +256,7 @@ form-label-text
 }
 
 .icecoffee-card::before {
-    content: url(/src/images/products/ice-coffee-mobile.png);
+    content: url(/src/images/products/ice-coffee-MB.png);
     position: absolute;
     top: 8px;
 }
@@ -250,7 +266,7 @@ form-label-text
 }
 
 .milkshake-card::before {
-    content: url(/src/images/products/milkshake-mobile.png);
+    content: url(/src/images/products/milkshake-MB.png);
     position: absolute;
     top: 8px;
 }
@@ -276,17 +292,17 @@ form-label-text
 /* changing content images for pc modal  */
 @media screen and (min-width: 1280px) {
     .icecream-card::before {
-        content: url(/src/images/products/ice-cream.png);
+        content: url(/src/images/products/ice-cream-DT.png);
         top: 20px;
     }
 
     .icecoffee-card::before {
-        content: url(/src/images/products/ice-coffee.png);
+        content: url(/src/images/products/ice-coffee-DT.png);
         top: 20px;
     }
 
     .milkshake-card::before {
-        content: url(/src/images/products/milkshake.png);
+        content: url(/src/images/products/milkshake-DT.png);
         top: 20px;
     }
 }

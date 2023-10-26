@@ -1,0 +1,48 @@
+// .gallery-pics {
+//     width: 100%;
+//     margin-bottom: 50px;
+// // retina mobile
+//     @media (min-device-pixel-ratio: 2),
+//         (min-resolution: 192dpi),
+//         (min-resolution: 2dppx) {
+//             background-image: url(../images/gallery-images/gallery-mobile@2x.jpg);
+//         }
+     
+//     @media screen and (min-width: 768px) {
+//         background-image: url(../images/gallery-images/gallery-tablet.jpg);
+//     }
+
+//     @media (min-device-pixel-ratio: 2),
+//     (min-resolution: 192dpi),
+//     (min-resolution: 2dppx) {
+//         background-image: url(../images/gallery-images/gallery-tablet@2x.jpg);
+//     }
+
+//     @media screen and (min-width: 768px) {
+//         background-image: url(../images/gallery-images/gallery-desktop.jpg);
+//     }
+
+//     @media (min-device-pixel-ratio: 2),
+//     (min-resolution: 192dpi),
+//     (min-resolution: 2dppx) {
+//         background-image: url(../images/gallery-images/gallery-desktop@2x.jpg);
+//     }
+
+// }
+
+.gallery__div {
+    content: url(../images/gallery-images/gallery-mobile.jpg);
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 39px;
+    margin-bottom: 60px;
+
+   
+    @media screen and (min-width: 768px) {
+        content: url(../images/gallery-images/gallery-tablet.jpg);
+        }
+
+    @media screen and (min-width: 1280px) {
+        content: url(../images/gallery-images/gallery-desktop.jpg);
+    }
+}
