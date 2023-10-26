@@ -1,3 +1,11 @@
+.container{
+    @media screen and (max-width:768px){
+        padding: 0; 
+        max-width:none;
+    }
+    
+}
+
 .page-header{
     background-color: #FFB8CA;
     margin: 0 auto;
@@ -6,20 +14,10 @@
 section, .header-nav{
     padding: 0 16px;
     display: flex;
-}
-
-.header-nav{
-    
-    @media screen and (min-width: 320px) {
-        width: 100%;
-        justify-content: space-between;
-    }
-    
-    @media screen and (min-width: 768px) {
-        width: 100%;
-        justify-content: space-between;
-    }
-    
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 1;
 }
 
 .header{
@@ -30,36 +28,41 @@ section, .header-nav{
     padding: 32px 0 0 0;
 }
 
-.link svg{
-    stroke: #D41443;
-}
 
-.logo svg{
+.logo{
     align-items: center;
     justify-content: center;
     cursor: pointer;
 }
 
+.logo svg{
+    fill: #D41443;
+}
+
 .nav-menu-list{
+    display: none;
     list-style: none;
-    display: flex;
     flex-direction: row;
     text-align: center;
-    justify-content: center;
-    gap: 35px;
+    align-items: center;
     color: #fff;
     padding: 0;
     margin-left: 115px;
     cursor: pointer;
 
+
     @media screen and (min-width: 768px){
         margin-left: 0;
+        display: flex;
+        gap: 15px;
     }
 
-    @media screen and (min-width: 320px) and (max-width: 768px) {
-        display: none;
-        visibility: none;
+    @media screen and (min-width: 1200px){
+        display: flex;
+        justify-content: space-between;
+        gap: 35px;
     }
+
 }
 
 
@@ -79,10 +82,10 @@ section, .header-nav{
     transition: color 250ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
-.page-header .header-btn{
+.header-btn{
+    display: none;
     width: 159px;
     height: 44px;
-    margin-left: 100px;
     border-radius: 22px;
     color: #D41443;
     background-color: #fff;
@@ -93,11 +96,24 @@ section, .header-nav{
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
     padding: 0;
+
+    @media screen and (min-width: 428px) and (max-width:1200px){
+        display: flex;
+        margin-left: 0; 
+    }
+
+    @media screen and (min-width: 1200px){
+        display: flex;
+        margin-left: 100px; 
+    }
+}
+
+.header-btn svg{
+    stroke: #D41443;
 }
 
 @media screen and (max-width: 768px) {
@@ -106,12 +122,7 @@ section, .header-nav{
     }
 }
 
-@media screen and (min-width: 320px) and (max-width: 428px){
-    .page-header .header-btn{
-    display: none;
-    visibility: none;
-    }
-}
+
 
 .page-header .header-btn:hover{
     background-color: #ECEBEB;
@@ -125,13 +136,8 @@ section, .header-nav{
 
 
 .page-header .menu-toggle{
-    @media screen and (min-width: 769px) {
-        visibility: hidden;
-        display: none;
-      }
-}
-
-.page-header .menu-toggle{
+    align-items: center;
+    justify-content: center;
     border: none;
     outline: none;
     background: transparent;
@@ -141,23 +147,29 @@ section, .header-nav{
 
 .menu-toggle svg{
     width: 100%;
+    stroke: #D41443;
 }
 
-
-
-@media screen and (min-width: 320px){
-    .header-buttons{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: row;
-        gap: 32px;
-        align-content: center;
+.menu-toggle{
+    @media screen and (min-width:768px) {
+        display: none;
     }
 }
 
+
+
+
+.header-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 32px;
+    align-content: center;
+}
+
+
 .mobile-nav {
-    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -175,6 +187,7 @@ section, .header-nav{
     transition-duration: 250ms;
     transition-timing-function: ease-in-out;
     transform: translateX(100%);
+    z-index: 999;
 }
 
 .mobile-nav {
@@ -228,6 +241,10 @@ section, .header-nav{
     cursor: pointer;
     padding: 0;
     margin: 0 auto;
+}
+
+.mobile-menu-btn svg{
+    stroke: #D41443;
 }
 
 .mobile-menu-btn:hover{
