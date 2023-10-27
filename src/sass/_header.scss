@@ -1,3 +1,8 @@
+.container{
+    max-width: none;
+    padding: 50px 15px;
+}
+
 .page-header{
     background-color: #FFB8CA;
     margin: 0 auto;
@@ -10,16 +15,19 @@ section, .header-nav{
 }
 
 .header-nav{
-    
-    @media screen and (min-width: 320px) {
-        width: 100%;
-        justify-content: space-between;
-    }
+    width: 100%;
+    justify-content: space-between;
     
     @media screen and (min-width: 768px) {
         width: 100%;
         justify-content: space-between;
     }
+
+    @media screen and (min-width: 1200px) {
+        width: 100%;
+        justify-content: space-between;
+    }
+
     
 }
 
@@ -27,7 +35,6 @@ section, .header-nav{
     display: flex;
     align-items: center;
     flex-direction: row;
-    justify-content: space-evenly;
     padding: 32px 0 0 0;
 }
 
@@ -43,24 +50,27 @@ section, .header-nav{
 }
 
 .nav-menu-list{
+    display: none;
     list-style: none;
-    display: flex;
     flex-direction: row;
     text-align: center;
+    justify-content: center;
     align-items: center;
-    gap: 35px;
     color: #fff;
     padding: 0;
-    margin-left: 115px;
     cursor: pointer;
+    margin: 0;
+    margin-left: 0;
 
     @media screen and (min-width: 768px){
-        margin-left: 0;
+        display: flex;
+        gap: 15;
     }
 
-    @media screen and (min-width: 320px) and (max-width: 768px) {
-        display: none;
-        visibility: none;
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        gap: 35px;
+        margin-left:128px;
     }
 }
 
@@ -84,7 +94,6 @@ section, .header-nav{
 .page-header .header-btn{
     width: 159px;
     height: 44px;
-    margin-left: 100px;
     border-radius: 22px;
     color: #D41443;
     background-color: #fff;
@@ -106,18 +115,27 @@ section, .header-nav{
     stroke: #D41443;
 }
 
-@media screen and (max-width: 768px) {
-    .page-header .header-btn{
-    margin-left: 0;
+.page-header .header-btn{   
+    
+    @media screen and (max-width: 768px) {
+        margin-left: 0;
+    }
+
+    @media screen and (min-width: 1200px) {
+    margin-left: 141px;
     }
 }
 
-@media screen and (min-width: 320px) and (max-width: 428px){
-    .page-header .header-btn{
+
+.page-header .header-btn{
     display: none;
     visibility: none;
+
+    @media screen and (min-width:428px) {
+        display: flex;
     }
 }
+
 
 .page-header .header-btn:hover{
     background-color: #ECEBEB;
@@ -141,7 +159,7 @@ section, .header-nav{
     border: none;
     outline: none;
     background: transparent;
-    align-items: center;
+    align-content: center;
     cursor: pointer;
 }
 
@@ -152,7 +170,7 @@ section, .header-nav{
 
 
 
-@media screen and (min-width: 320px){
+@media screen{
     .header-buttons{
         display: flex;
         align-items: center;
@@ -185,16 +203,15 @@ section, .header-nav{
 }
 
 .mobile-nav {
+    right: auto;
+    left: auto;
+
     @media screen and (min-width: 428px) and (max-width: 768px) { 
         right: 0;
         left: auto;
         max-width:254px;
     }
-    @media screen and (min-width: 320px) and (max-width: 428px) { 
-        right: auto;
-        left: auto;
-        max-width:250px;
-    }
+    
 }
 
 .mobile-nav.is-open{
@@ -249,7 +266,7 @@ section, .header-nav{
     display: flex;
     flex-direction: column;
     list-style: none;
-    padding: 0;
+    padding: 33px 0;
     gap: 22px;
 }
 
