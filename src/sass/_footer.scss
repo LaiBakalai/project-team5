@@ -4,12 +4,15 @@
   --black: #000;
   --velvet: #d41443;
   --gray: #907e82;
-  --lightpink: #ffa5ba;
+  lightpink: #ffa5ba;
 }
 
-
+.page-elements{
+  display: flex;
+  padding: 0 20px;
+}
 .footer-text-top {
-  color: #FFA5BA;
+  color: #ffa5ba;
   font-family: Titan One;
   font-size: 30px;
   font-style: normal;
@@ -39,13 +42,14 @@
 }
 
 .page-footer {
-  background-color: var(--lightwhite);
+ 
   width: 100%;
   height: 273px;
   padding: 0 15px;
   padding-top: 96px;
   padding-bottom: 96px;
   display: flex;
+  flex-direction: column;
   background-color: #fff5f6;
 
   @media screen and (min-width: 768px) {
@@ -87,6 +91,12 @@
   }
 }
 
+.footer-social-message{
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+}
+
 .footer-social-icons {
   margin-left: 16px;
   align-items: center;
@@ -95,6 +105,9 @@
 }
 .footer-social {
   flex-direction: row;
+  margin-left: auto;
+  margin-bottom: 30px;
+  padding-top: 50px;
 }
 .mobile-contact {
   color: #d41443;
@@ -136,6 +149,14 @@
   }
 }
 
+.page-copyright{
+  background-color: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #e1e1e1;
+}
+
 .copyright {
   color: #907e82;
   font-family: DM Sans;
@@ -145,6 +166,8 @@
   line-height: 186%; /* 26.04px */
   letter-spacing: 0.28px;
   text-align: center;
+ 
+  
 }
 .line {
   width: 1167px;
