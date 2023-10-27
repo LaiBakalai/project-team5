@@ -88,7 +88,7 @@ section, .header-nav{
 
 .page-header-link:hover, .page-header-link.current{
     color: #D41443;
-    transition: color 250ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .page-header .header-btn{
@@ -139,7 +139,7 @@ section, .header-nav{
 
 .page-header .header-btn:hover{
     background-color: #ECEBEB;
-    transition: color 250ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-btn svg{
@@ -260,7 +260,7 @@ section, .header-nav{
 
 .mobile-menu-btn:hover{
     background-color: #ECEBEB;
-    transition: color 250ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mobile-nav-menu{
     display: flex;
@@ -281,11 +281,9 @@ section, .header-nav{
     margin: 0 auto;
 }
 
-
-
 .mobile-nav-menu a:hover, .mobile-nav-menu-item-list.current{
     color: #D41443;
-    transition: color 250ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
