@@ -8,7 +8,7 @@
     margin: 0 auto;
 }
 
-section, .header-nav{
+.header-nav{
     padding: 0 16px;
     display: flex;
     z-index: 1;
@@ -62,7 +62,9 @@ section, .header-nav{
     margin: 0;
     margin-left: 0;
 
-    @media screen and (min-width: 768px){
+
+    @media screen and (min-width: 769px){
+
         display: flex;
         gap: 15;
     }
