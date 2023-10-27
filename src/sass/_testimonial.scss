@@ -11,6 +11,7 @@ ul {
   list-style-type: none;
 }
 .testi-container {
+  margin-top:120px;
   font-family: 'DM Sans', sans-serif;
   min-width: 1200px;
   min-height: 450px;
@@ -19,6 +20,7 @@ ul {
   }
   @media screen and (max-width: 320px) {
     min-width: 320px;
+    min-height: 600px;
   }
 }
 :root {
@@ -51,6 +53,12 @@ ul {
   min-height: inherit;
   position: relative;
   overflow: hidden;
+  margin-bottom:-68px;
+  @media (max-width: 768px) {
+
+  }
+  @media (max-width: 320px) {
+  }
 }
 .testRow .testItem {
   width: 100%;
@@ -146,7 +154,7 @@ ul {
     margin-bottom: 16px;
   }
   @media (max-width: 320px) {
-    margin-top: 16px;
+    margin-top: 10px;
     margin-bottom: 16px;
   }
 }

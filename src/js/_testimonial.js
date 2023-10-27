@@ -43,7 +43,7 @@ function slideNext() {
   indicators();
 }
 function autoSliding() {
-  deleteInterval = setInterval(timer, 3000);
+  deleteInterval = setInterval(timer, 5000);
   function timer() {
     slideNext();
     indicators();
