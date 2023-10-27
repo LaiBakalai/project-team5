@@ -1,5 +1,6 @@
 .backdrop {
     position: fixed;
+    z-index: 20;
     top: 0;
     left: 0;
     width: 100%;
@@ -28,7 +29,7 @@
         height: auto;
         width: 720px;
     }
-   
+
     @media screen and (min-width: 1280px) {
         height: auto;
         width: 1200px;
@@ -52,7 +53,7 @@
 
     background-color: #FFA5BA;
     color: black;
-    border: 1px solid rgba(0, 0, 0, 0.1);   
+    border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     cursor: pointer;
 
@@ -83,14 +84,15 @@
     font-size: 32px;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px; /* 150% */
+    line-height: 24px;
+    /* 150% */
 
     @media screen and (min-width: 768px) {
-            font-size: 26px;
-            font-style: normal;
-            font-weight: 500;
-        }
-    
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 500;
+    }
+
     @media screen and (min-width: 1280px) {
         font-size: 42px;
         font-style: normal;
@@ -119,12 +121,12 @@
     top: -16px;
 
     @media screen and (min-width: 768px) {
-           left: 170px;
-        }
+        left: 170px;
+    }
 
     @media screen and (min-width: 1280px) {
-            left: 290px;
-        }
+        left: 290px;
+    }
 }
 
 .form-label-input,
@@ -145,17 +147,15 @@
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     @media screen and (min-width: 768px) {
-            width: 50%;
-            margin-right: auto;
-            margin-left: auto;
-        }
-    
-        @media screen and (min-width: 1280px) {
+        width: 50%;
+        margin-right: auto;
+        margin-left: auto;
+    }
 
-        }
+    @media screen and (min-width: 1280px) {}
 }
-form-label-text
-.form-label-textarea {
+
+form-label-text .form-label-textarea {
     padding-left: 16px;
     resize: none;
 }
@@ -185,11 +185,12 @@ form-label-text
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     @media screen and (min-width: 768px) {
-            left: 180px;       
-        }
+        left: 180px;
+    }
+
     @media screen and (min-width: 1280px) {
-            left: 305px;
-        }
+        left: 305px;
+    }
 }
 
 .form-label-input:hover+.form-input-icon,
@@ -220,54 +221,85 @@ form-label-text
     background-color: #C2E297;
 }
 
-.products-list-item {
+.products-list-itemcard {
     cursor: pointer;
+    padding-top: 70px;
+    position: relative;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 158px;
+    }
+
 }
 
-.icecream-card {
+.icecream-div {
     background: #ffb8ca;
 }
 
-.icecream-card::before {
-    content: url(/src/images/products/ice-cream-mobile.png);
+.icecream-div::before {
+    content: url(/src/images/products/ice-cream-MB.png);
     position: absolute;
-    top: 8px;
+    top: 5px;
+
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            content: url(/src/images/products/ice-cream-retina.png);
+            position: absolute;
+            top: 5px;
+        }
 
 }
 
-.icecoffee-card {
+.icecoffee-div {
     background: #f0d1a5;
 }
 
-.icecoffee-card::before {
-    content: url(/src/images/products/ice-coffee-mobile.png);
+.icecoffee-div::before {
+    content: url(/src/images/products/ice-coffee-MB.png);
     position: absolute;
-    top: 8px;
+    top: 5px;
+
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            content: url(/src/images/products/ice-coffee-retina.png);
+            position: absolute;
+            top: 5px;
+        }
 }
 
-.milkshake-card {
+.milkshake-div {
     background: #c2e297;
 }
 
-.milkshake-card::before {
-    content: url(/src/images/products/milkshake-mobile.png);
+.milkshake-div::before {
+    content: url(/src/images/products/milkshake-MB.png);
     position: absolute;
-    top: 8px;
+    top: 5px;
+
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                content: url(/src/images/products/milkshake-retina.png);
+                position: absolute;
+                top: 5px;
+            }
 }
 
 /* changing content images for tablet modal */
 @media screen and (min-width: 768px) {
-    .icecream-card::before {
+    .icecream-div::before {
         content: url(/src/images/products/ice-cream-tablet.png);
         top: 20px;
     }
 
-    .icecoffee-card::before {
+    .icecoffee-div::before {
         content: url(/src/images/products/ice-coffee-tablet.png);
         top: 20px;
     }
 
-    .milkshake-card::before {
+    .milkshake-div::before {
         content: url(/src/images/products/milkshake-tablet.png);
         top: 20px;
     }
@@ -275,18 +307,53 @@ form-label-text
 
 /* changing content images for pc modal  */
 @media screen and (min-width: 1280px) {
-    .icecream-card::before {
-        content: url(/src/images/products/ice-cream.png);
-        top: 20px;
+    .icecream-div::before {
+        content: url(/src/images/products/ice-cream-DT.png);
+        top: 10px;
     }
 
-    .icecoffee-card::before {
-        content: url(/src/images/products/ice-coffee.png);
-        top: 20px;
+    .icecoffee-div::before {
+        content: url(/src/images/products/ice-coffee-DT.png);
+        top: 10px;
     }
 
-    .milkshake-card::before {
-        content: url(/src/images/products/milkshake.png);
-        top: 20px;
+    .milkshake-div::before {
+        content: url(/src/images/products/milkshake-DT.png);
+        top: 10px;
     }
+}
+
+.products-list-item-desc {
+    /* border  */
+    width: 150px;
+    border-radius: 15px;
+    padding: 80px 16px 20px;
+    /* interior styling  */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    gap: 16px;
+
+    @media screen and (min-width: 768px) {
+        width: 224px;
+        padding: 118px 18px 40px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 368px;
+        padding: 165px 32px 60px;
+    }
+}
+
+.icecream-div {
+    background: #ffb8ca;
+}
+
+.icecoffee-div {
+    background: #f0d1a5;
+}
+
+.milkshake-div {
+    background: #c2e297;
 }
