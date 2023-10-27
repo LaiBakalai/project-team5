@@ -4,12 +4,12 @@
   --black: #000;
   --velvet: #d41443;
   --gray: #907e82;
-  lightpink: #ffa5ba;
+  --lightpink: #ffa5ba;
 }
 
 
 .footer-text-top {
-  color: #ffa5ba;
+  color: var(--lightpink);
   font-family: Titan One;
   font-size: 30px;
   font-style: normal;
