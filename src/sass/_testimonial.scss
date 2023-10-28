@@ -122,7 +122,7 @@ ul {
     font-size: 12px;
     font-weight: 500;
     line-height: 260%;
-    letter-spacing: 0.48px;
+    letter-spacing: 0.45px;
   }
 }
 .contents-testimonial .indicators {
@@ -159,18 +159,23 @@ ul {
   }
 }
 .testi-quote {
-  position: relative;
-  top: 7px;
-  left: 5px;
+  position: absolute;
+  width: 54px;
+  height: 40px;
+  top: 159px;
+  left: 210px;
   z-index: -1;
   padding-right: 20px;
   border-bottom: 2px solid #e1e1e1;
   @media (max-width: 768px) {
     width: 60.353px;
-    left: -250px;
+    padding-right: 0;
+    top:147px;
+    left:86px;
   }
   @media (max-width: 320px) {
-    left: 50px;
+    top:137px;
+    left:71px;
   }
 }
 .testi-paragraph {
