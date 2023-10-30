@@ -1,163 +1,121 @@
 .about {
-    padding-top: 125px;
-    padding-bottom: 39px;
-    background-color: var(--bg-section);
-    background-image: url(/src/images/about-images/about-img-bg.png);
-    background-repeat: no-repeat;
-    background-position: right 0 bottom 50px;
-    background-size: contain;
-
-    @media screen and (min-width: 480px) {
-        background-image: url(/src/images/about-images/about-img-bg.png);
-
-        @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
-        screen and (min-resolution: 192dpi) and (min-width: 320px),
-        screen and (min-resolution: 2dppx) and (min-width: 320px) {
-            & {
-                background-image: url(/src/images/about-images/about-img-bg@2x.png);
-            }
-        }
-    }
-
-    @media screen and (min-width: 768px) {
-        padding-top: 130px;
-        padding-bottom: 66px;
-        background-image: none;
-    }
+    text-align: center;
+    background-color: #FFF5F6;
+    padding-top: 60px;
+    padding-bottom: 40px;
 
     @media screen and (min-width: 1280px) {
         padding-top: 60px;
         padding-bottom: 39px;
         background-position: center bottom 0;
-
         background-image: url(/src/images/about-images/about-img-bg.png);
-
-        @media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
-        screen and (min-resolution: 192dpi) and (min-width: 1280px),
-        screen and (min-resolution: 2dppx) and (min-width: 1280px) {
-            & {
-                background-image: url(/src/images/about-images/about-img-bg@2x.png);
-            }
-        }
-    }
-
-    &-info-text {
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 1.58;
-        color: var(--color-design-black);
-        margin-bottom: 35px;
-        margin-right: auto;
-        margin-left: auto;
-
-        width: 220px;
-
-        @media screen and (min-width: 768px) {
-            font-size: 14px;
-            line-height: 1.79;
-            margin-bottom: 32px;
-            width: 340px;
-        }
-
-        @media screen and (min-width: 1280px) {
-            font-size: 16px;
-            line-height: 1.76;
-            letter-spacing: 0.04em;
-            width: 463px;
-        }
-    }
-
-    &-title {
-        width: 200px;
-        margin-left: auto;
-        margin-right: auto;
-    
-           @media screen and (min-width: 768px) {
-                width: 100%;
-        }
-    }
-
-    &-info-description {
-        display: block;
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 1.58;
-        color: var(--color-description);
-        margin-bottom: 15px;
-        margin-right: auto;
-        margin-left: auto;
-
-        width: 220px;
-
-        @media screen and (min-width: 768px) {
-            font-size: 14px;
-            line-height: 1.79;
-            letter-spacing: 0.04em;
-            width: 340px;
-            margin-bottom: 15px;
-        }
-
-        @media screen and (min-width: 1280px) {
-            font-size: 14px;
-            line-height: 1.93;
-            letter-spacing: 0.04em;
-            width: 463px;
-            margin-bottom: 40px;
-        }
-    }
-
-    &-info {
-        margin-top: 26px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        @media screen and (min-width: 768px) {
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: flex-start;
-            margin-top: 50px;
-        }
-
-        @media screen and (min-width: 1280px) {
-            align-items: center;
-        }
-    }
-
-    &-info-text {
-        @media screen and (min-width: 768px) {
-            padding-top: 50px;
-        }
-
-        @media screen and (min-width: 1280px) {
-            padding-top: 0;
-        }
+        background-repeat: no-repeat;
+        background-size: contain;
     }
 }
 
-.about-info-description.paragraph {
-    margin-bottom: 17px;
+.about-title {
+    margin: 0 auto;
+}
+
+.about-title.section-title {
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.36px;
+    text-transform: uppercase;
+}
+
+.about-info {
+    padding-top: 32px;
 
     @media screen and (min-width: 768px) {
-        margin-bottom: 62px;
+        display: flex;
+        flex-direction: row;
+
+        .about-info-image,
+        .about-info-main {
+            gap: 16px;
+
+        }
     }
 
-    @media screen and (min-width: 1280px) {
-        margin-bottom: 45px;
+    @media screen and (min-width: 1024px) {
+        display: flex;
+        flex-direction: row;
+        /*padding-top: 60px; */
     }
+
+    .about-info-image,
+    .about-info-main {
+        width: calc(50% - 49.5px);
+        margin: 0 49.5px;
+    }
+}
+
+img {
+    width: 100%;
 }
 
 .about-info-image {
-    margin-bottom: 46px;
+    width: 280px;
+    padding-bottom: 40px;
+    margin: 0 auto;
 
     @media screen and (min-width: 768px) {
-        margin-top: 0;
-        margin-bottom: 0;
+        width: 380px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
     }
 
-    @media screen and (min-width: 1280px) {
-        padding-top: 47px;
+    @media screen and (min-width: 1024px) {
+        width: 501px;
     }
+}
+
+.about-info-main {
+    text-align: left;
+    width: 220px;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.48px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+        /*width: 334px;*/
+    }
+
+    @media screen and (min-width: 1024px) {
+        font-size: 16px;
+        padding-top: 90px;
+        /*width: 334px;*/
+    }
+}
+
+.about-info-text {
+    color: #000;
+    padding-bottom: 18px;
+    line-height: 162%;
+
+    @media screen and (min-width: 768px) {
+        padding-bottom: 32px;
+    }
+
+    @media screen and (min-width: 1024px) {
+        padding-bottom: 32px;
+    }
+
+}
+
+.about-info-description {
+    color: #907E82;
+    line-height: 194%;
+
+    letter-spacing: 0.48px;
+    padding-bottom: 20px;
 }
 
 .about-button {

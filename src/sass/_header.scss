@@ -1,3 +1,5 @@
+
+
 .page-header{
     background-color: #FFB8CA;
     margin: 0 auto;
@@ -10,16 +12,19 @@
 }
 
 .header-nav{
-    
-    @media screen and (min-width: 320px) {
-        width: 100%;
-        justify-content: space-between;
-    }
+    width: 100%;
+    justify-content: space-between;
     
     @media screen and (min-width: 768px) {
         width: 100%;
         justify-content: space-between;
     }
+
+    @media screen and (min-width: 1200px) {
+        width: 100%;
+        justify-content: space-between;
+    }
+
     
 }
 
@@ -27,7 +32,6 @@
     display: flex;
     align-items: center;
     flex-direction: row;
-    justify-content: space-evenly;
     padding: 32px 0 0 0;
 }
 
@@ -43,27 +47,31 @@
 }
 
 .nav-menu-list{
+    display: none;
     list-style: none;
-    display: flex;
     flex-direction: row;
     text-align: center;
+    justify-content: center;
     align-items: center;
-    gap: 35px;
     color: #fff;
     padding: 0;
-    margin-left: 115px;
     cursor: pointer;
+    margin: 0;
+    margin-left: 0;
 
-    @media screen and (min-width: 768px){
-        margin-left: 0;
+
+    @media screen and (min-width: 769px){
+
+        display: flex;
+        gap: 15px;
     }
 
-    @media screen and (min-width: 320px) and (max-width: 768px) {
-        display: none;
-        visibility: none;
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        gap: 35px;
+        margin-left:128px;
     }
 }
-
 
 .page-header-link{
     color: #FFF;
@@ -78,13 +86,12 @@
 
 .page-header-link:hover, .page-header-link.current{
     color: #D41443;
-    transition: color 250ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .page-header .header-btn{
     width: 159px;
     height: 44px;
-    margin-left: 100px;
     border-radius: 22px;
     color: #D41443;
     background-color: #fff;
@@ -95,7 +102,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    display: flex;
+
     justify-content: center;
     align-items: center;
     cursor: pointer;
@@ -106,22 +113,31 @@
     stroke: #D41443;
 }
 
-@media screen and (max-width: 768px) {
-    .page-header .header-btn{
-    margin-left: 0;
+.page-header .header-btn{   
+    
+    @media screen and (max-width: 768px) {
+        margin-left: 0;
+    }
+
+    @media screen and (min-width: 1200px) {
+    margin-left: 141px;
     }
 }
 
-@media screen and (min-width: 320px) and (max-width: 428px){
-    .page-header .header-btn{
+
+.page-header .header-btn{
     display: none;
     visibility: none;
+
+    @media screen and (min-width:428px) {
+        display: flex;
     }
 }
+
 
 .page-header .header-btn:hover{
     background-color: #ECEBEB;
-    transition: color 250ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-btn svg{
@@ -141,7 +157,7 @@
     border: none;
     outline: none;
     background: transparent;
-    align-items: center;
+    align-content: center;
     cursor: pointer;
 }
 
@@ -152,21 +168,22 @@
 
 
 
-@media screen and (min-width: 320px){
-    .header-buttons{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: row;
-        gap: 32px;
-        align-content: center;
-    }
+
+.header-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 32px;
+    align-content: center;
 }
+
 
 .mobile-nav {
     position: fixed;
     top: 0;
-    left: 0;
+    left: auto;
+    right: auto;
     width: 100vw;
     height: 100vh;
     padding: 50px 32px 32px 32px;
@@ -182,20 +199,14 @@
     transition-timing-function: ease-in-out;
     transform: translateX(100%);
     z-index: 999;
-}
 
-.mobile-nav {
     @media screen and (min-width: 428px) and (max-width: 768px) { 
         right: 0;
-        left: auto;
         max-width:254px;
     }
-    @media screen and (min-width: 320px) and (max-width: 428px) { 
-        right: auto;
-        left: auto;
-        max-width:250px;
-    }
 }
+
+
 
 .mobile-nav.is-open{
     visibility: visible;
@@ -243,13 +254,13 @@
 
 .mobile-menu-btn:hover{
     background-color: #ECEBEB;
-    transition: color 250ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mobile-nav-menu{
     display: flex;
     flex-direction: column;
     list-style: none;
-    padding: 0;
+    padding: 33px 0;
     gap: 22px;
 }
 
@@ -264,11 +275,9 @@
     margin: 0 auto;
 }
 
-
-
 .mobile-nav-menu a:hover, .mobile-nav-menu-item-list.current{
     color: #D41443;
-    transition: color 250ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
