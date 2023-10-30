@@ -11,10 +11,10 @@ ul {
   list-style-type: none;
 }
 .testi-container {
-  margin:120px auto 120px;
+  margin:120px auto 0;
   font-family: 'DM Sans', sans-serif;
   max-width: 320px;
-  min-height: 480px;
+  min-height: 600px;
   @media screen and (min-width: 768px) {
     max-width: 768px;
   }
@@ -49,29 +49,16 @@ ul {
   margin: 0 auto;
   text-align: center;
 }
-.testRow{
-  margin-bottom:460px;
-  @media (min-width: 768px) {     
-
-  }
-  @media (min-width: 1200px) {
-    margin-bottom:400px;
-
-  }
-}
-.contents-testimonial { 
-  overflow: hidden;
+.contents-testimonial .testRow {
   width: 100%;
+  min-height: inherit;
   position: relative;
-
-  
-  @media (min-width: 768px) {     
-
+  overflow: hidden;
+  margin-bottom:-68px;
+  @media (max-width: 768px) {
 
   }
-  @media (min-width: 1200px) {
-   
-
+  @media (max-width: 320px) {
   }
 }
 .testRow .testItem {
@@ -84,19 +71,16 @@ ul {
 }
 .testimonial-content {
   z-index: 0;
-  width: 280px;
-  padding: 27 65px 20px 58px;
-
+  width: 968px;
   background-color: var(--grey);
-
-  @media (min-width: 768px) {
+  padding: 47px 110px 39px 110px;
+  @media (max-width: 768px) {
     width: 620px;
     padding: 37px 64px 44px;
   }
-  @media (min-width: 1200px) {
-    width: 968px;  
-    padding: 47px 110px 39px 110px;
-
+  @media (max-width: 320px) {
+    width: 280px;
+    padding: 27 65px 20px 58px;
   }
 }
 .testRow .testItem:not(.active) {
@@ -112,36 +96,34 @@ ul {
   outline-offset: 2px;
 }
 .testRow .testItem h2 {
-  font-size: 14px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 500;
   line-height: 186%;
-  @media (min-width: 768px) {
+  @media (max-width: 768px) {
     font-size: 16px;
   }
-  @media (min-width: 1200px) {
-
-    font-size: 20px;
+  @media (max-width: 320px) {
+    font-size: 14px;
   }
 }
 .testRow .testItem p {
-  font-size: 12px;
+  font-size: 16px;
   width: 750px;
   font-weight: 500;
-  line-height: 260%;
-  letter-spacing: 0.45px;
-  @media (min-width: 768px) {
+  line-height: 186%;
+  letter-spacing: 0.64px;
+  @media (max-width: 768px) {
     font-size: 14px;
     font-weight: 500;
     line-height: 214%;
     letter-spacing: 0.56px;
   }
-  @media (min-width: 1200px) {
-    font-size: 16px;
-    line-height: 186%;
-    letter-spacing: 0.64px;
+  @media (max-width: 320px) {
+    font-size: 12px;
     font-weight: 500;
-
+    line-height: 260%;
+    letter-spacing: 0.45px;
   }
 }
 .contents-testimonial .indicators {
@@ -165,16 +147,15 @@ ul {
   border-radius: 0;
 }
 .testi-spacer {
-  margin-top: 10px;
+  margin-top: 16px;
   margin-bottom: 16px;
-
   z-index: 3;
-  @media (min-width: 768px) {
+  @media (max-width: 768px) {
     margin-top: 4px;
     margin-bottom: 16px;
   }
-  @media (min-width: 1200px) {
-    margin-top: 16px;
+  @media (max-width: 320px) {
+    margin-top: 10px;
     margin-bottom: 16px;
   }
 }
@@ -182,32 +163,29 @@ ul {
   position: absolute;
   width: 54px;
   height: 40px;
-  top:137px;
-  left:71px;
+  top: 159px;
+  left: 210px;
   z-index: -1;
-  
+  padding-right: 20px;
   border-bottom: 2px solid #e1e1e1;
-  @media (min-width: 768px) {
+  @media (max-width: 768px) {
     width: 60.353px;
     padding-right: 0;
     top:147px;
     left:86px;
   }
-  @media (min-width: 1200px) {
-    padding-right: 20px;
-
-    top: 159px;
-    left: 210px;
+  @media (max-width: 320px) {
+    top:137px;
+    left:71px;
   }
 }
 .testi-paragraph {
   display: inline;
-  position: relative;
   border-bottom: 2px solid #e1e1e1;
-  @media (min-width: 768px) {
+  @media (max-width: 768px) {
   }
-  @media (min-width: 1200px) {
-
+  @media (max-width: 320px) {
+    position: relative;
   }
 }
 .testi-icon2 {
