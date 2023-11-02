@@ -43,7 +43,7 @@
 }
 
 .logo svg{
-    fill: #D41443;
+    fill: #D41443;  
 }
 
 .nav-menu-list{
@@ -59,7 +59,7 @@
     margin: 0;
     margin-left: 0;
 
-    @media screen and (min-width: 769px){
+    @media screen and (min-width: 900px){ 
         display: flex;
         gap: 15px;
     }
@@ -145,7 +145,7 @@
 
 
 .page-header .menu-toggle{
-    @media screen and (min-width: 769px) {
+    @media screen and (min-width: 900px) {
         visibility: hidden;
         display: none;
       }
