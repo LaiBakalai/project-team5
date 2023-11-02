@@ -1,0 +1,359 @@
+.backdrop {
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 47, 66, 0.4);
+    opacity: 1;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100%;
+    width: 50%;
+    background-color: white;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+        0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+    border-radius: 4px;
+    padding: 72px 24px 24px;
+
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 768px) {
+        height: auto;
+        width: 720px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        height: auto;
+        width: 1200px;
+    }
+}
+
+.backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(0);
+}
+
+.modal-close {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+
+    background-color: #FFA5BA;
+    color: black;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    cursor: pointer;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-icon {
+    fill: currentColor;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+    background-color: white;
+    color: black;
+}
+
+.is-hidden {
+    visibility: none;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal-header-text {
+    color: #131313;
+    text-align: center;
+    font-family: Seymour One;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 150% */
+
+    @media screen and (min-width: 768px) {
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 500;
+    }
+
+    @media screen and (min-width: 1280px) {
+        font-size: 42px;
+        font-style: normal;
+        font-weight: 500;
+    }
+}
+
+.modal-form-label,
+.modal-form-textarea {
+    display: block;
+    position: relative;
+}
+
+.modal-form-textarea {
+    margin-bottom: 16px;
+}
+
+.form-label-text {
+    color: #131313;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    position: absolute;
+    top: -16px;
+
+    @media screen and (min-width: 768px) {
+        left: 170px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        left: 290px;
+    }
+}
+
+.form-label-input,
+.form-label-textarea {
+    color: white;
+    background: #F0D1A5;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0.48px;
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+    padding: 11px 16px 11px 40px;
+    outline: none;
+    border-radius: 4px;
+    border: 1px solid #FFA5BA;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 768px) {
+        width: 50%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    @media screen and (min-width: 1280px) {}
+}
+
+form-label-text .form-label-textarea {
+    padding-left: 16px;
+    resize: none;
+}
+
+.form-label-textarea::placeholder {
+    color: white;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0.48px;
+}
+
+.form-label-input:hover,
+.form-label-input:focus,
+.form-label-textarea:hover,
+.form-label-textarea:focus {
+    outline: none;
+    border: 1px solid #d6efb5;
+}
+
+.form-input-icon {
+    fill: black;
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 768px) {
+        left: 180px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        left: 305px;
+    }
+}
+
+.form-label-input:hover+.form-input-icon,
+.form-label-input:focus+.form-input-icon {
+    fill: #d6efb5;
+}
+
+
+.modal-form-button {
+    color: var(--white, #fff);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.64px;
+    border: none;
+    border-radius: 4px;
+    background: #d6efb5;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    padding: 16px 32px;
+    margin: 0 auto;
+    cursor: pointer;
+    display: block;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-button:hover {
+    background-color: #C2E297;
+}
+
+.products-list-itemcard {
+    cursor: pointer;
+    padding-top: 70px;
+    position: relative;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 158px;
+    }
+
+}
+
+.icecream-div {
+    background: #ffb8ca;
+}
+
+.icecream-div::before {
+    content: url(/src/images/products/ice-cream-MB.png);
+    position: absolute;
+    top: 5px;
+
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            content: url(/src/images/products/ice-cream-retina.png);
+            position: absolute;
+            top: 5px;
+        }
+
+}
+
+.icecoffee-div {
+    background: #f0d1a5;
+}
+
+.icecoffee-div::before {
+    content: url(/src/images/products/ice-coffee-MB.png);
+    position: absolute;
+    top: 5px;
+
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            content: url(/src/images/products/ice-coffee-retina.png);
+            position: absolute;
+            top: 5px;
+        }
+}
+
+.milkshake-div {
+    background: #c2e297;
+}
+
+.milkshake-div::before {
+    content: url(/src/images/products/milkshake-MB.png);
+    position: absolute;
+    top: 5px;
+
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                content: url(/src/images/products/milkshake-retina.png);
+                position: absolute;
+                top: 5px;
+            }
+}
+
+/* changing content images for tablet modal */
+@media screen and (min-width: 768px) {
+    .icecream-div::before {
+        content: url(/src/images/products/ice-cream-tablet.png);
+        top: 20px;
+    }
+
+    .icecoffee-div::before {
+        content: url(/src/images/products/ice-coffee-tablet.png);
+        top: 20px;
+    }
+
+    .milkshake-div::before {
+        content: url(/src/images/products/milkshake-tablet.png);
+        top: 20px;
+    }
+}
+
+/* changing content images for pc modal  */
+@media screen and (min-width: 1280px) {
+    .icecream-div::before {
+        content: url(/src/images/products/ice-cream-DT.png);
+        top: 10px;
+    }
+
+    .icecoffee-div::before {
+        content: url(/src/images/products/ice-coffee-DT.png);
+        top: 10px;
+    }
+
+    .milkshake-div::before {
+        content: url(/src/images/products/milkshake-DT.png);
+        top: 10px;
+    }
+}
+
+.products-list-item-desc {
+    /* border  */
+    width: 150px;
+    border-radius: 15px;
+    padding: 80px 16px 20px;
+    /* interior styling  */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    gap: 16px;
+
+    @media screen and (min-width: 768px) {
+        width: 224px;
+        padding: 118px 18px 40px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 368px;
+        padding: 165px 32px 60px;
+    }
+}
+
+.icecream-div {
+    background: #ffb8ca;
+}
+
+.icecoffee-div {
+    background: #f0d1a5;
+}
+
+.milkshake-div {
+    background: #c2e297;
+}

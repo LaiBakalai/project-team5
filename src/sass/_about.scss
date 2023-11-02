@@ -1,0 +1,257 @@
+/* Mobile Styles (default) */
+.about {
+    text-align: center;
+    background-color: #FFF5F6;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    margin: 0;
+}
+
+.about-info,
+.about-info-main {
+    margin: 0 20px;
+}
+
+.about-title .section-subtitle {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.about-title .section-title {
+    font-size: 34px;
+    margin:0 auto;
+    width: 200px;
+    
+}
+
+img {
+    width: 100%;
+}
+
+.about-info-image{
+    width: 280px;
+    display: block;
+    margin: 0 auto;
+}
+
+.about-info-text {
+    color: #000;
+    font-family: DM Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 162%; /* 19.44px */
+    letter-spacing: 0.48px;
+    width:220px;
+    text-align:left;
+    padding-bottom: 18px;
+}
+
+.about-info-description {
+    color: #907E82;
+    font-family: DM Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 162%; /* 19.44px */
+    letter-spacing: 0.48px;
+    margin-bottom: 20px;
+    width:220px;
+    text-align:left;
+}
+
+.about-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 176px;
+    padding: 14px 30px;
+    border-radius: 22px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.29;
+
+    transition: background-color 250ms linear;
+
+    @media screen and (min-width: 768px) {
+        font-size: 16px;
+        line-height: 1.31;
+    }
+
+    &:hover,
+    &:focus {
+        background-color: var(--bg-btn-light-hover);
+    }
+}
+
+.btn-light-icon {
+    width: 8px;
+    height: 10px;
+    margin-left: 14px;
+    fill: var(--bg-btn-dark);
+}
+
+/* CSS rules for tablets */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    
+    .about {
+        text-align: center;
+        background-color: #FFF5F6;
+        padding-top: 60px;
+        padding-bottom: 40px;
+        margin:0;
+    }
+
+    .about-info,
+    .about-info-main {
+        margin: 0 32px;
+    }
+
+    .about-title .section-subtitle {
+        font-size: 26px;
+        margin-bottom: 15px;
+    }
+    
+    .about-title .section-title {
+        font-size: 48px;
+        margin:0;
+        width: auto;
+    }
+
+    .about-title {
+        margin-bottom: 40px;
+    }
+
+    .about-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 32px;
+    }
+    
+    .about-info-image,
+    .about-info-main {
+        flex: 1;
+    }
+
+    .about-info {
+        flex: 0 0 200px; 
+    }
+
+    .about-info-image{
+        width: 336px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .about-info-main {
+        text-align:left;
+    }
+
+    .about-info-text {
+        color: #000;
+        font-family: DM Sans;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 174%; /* 24.36px */
+        letter-spacing: 0.56px;
+        margin-bottom: 32px;
+        width:334px;
+    }
+    
+    .about-info-description {
+        color: #907E82;
+        font-family: DM Sans;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 194%;
+        letter-spacing: 0.56px;
+        width:334px;
+    }
+}
+
+/* CSS rules for desktops */
+@media screen and (min-width: 1024px) {
+    .about {
+        text-align: center;
+        background-color: #FFF5F6;
+        padding-top: 60px;
+        padding-bottom: 40px;
+        margin: 0;
+
+        background-image: url(/src/images/about-images/about-img-bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .about-info,
+    .about-info-main {
+        margin: 0 16px;
+    }
+
+    .about-title .section-subtitle {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+    
+    .about-title .section-title {
+        font-size: 58px;
+        margin:0;
+        width: auto;
+    }
+
+    .about-title {
+        margin-bottom: 60px;
+    }
+
+    .about-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 99px;
+    }
+    
+    .about-info-image,
+    .about-info-main {
+        flex: 1;
+    }
+
+    .about-info {
+        flex: 0 0 200px; 
+    }
+
+    .about-info-image{
+        width: 501px;
+        display: block;
+
+    }
+
+    .about-info-main {
+        text-align:left;
+    }
+
+    .about-info-text {
+        color: #000;
+        font-family: DM Sans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 176%; /* 24.36px */
+        letter-spacing: 0.64px;
+        margin-bottom: 32px;
+        width:400px;
+    }
+    
+    .about-info-description {
+        color: #907E82;
+        font-family: DM Sans;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 194%; /* 27.16px */
+        letter-spacing: 0.56px;
+        width:401px;
+    }
+}
