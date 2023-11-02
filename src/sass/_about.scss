@@ -43,6 +43,8 @@ img {
     line-height: 162%; /* 19.44px */
     letter-spacing: 0.48px;
     width:220px;
+    text-align:left;
+    padding-bottom: 18px;
 }
 
 .about-info-description {
@@ -55,6 +57,7 @@ img {
     letter-spacing: 0.48px;
     margin-bottom: 20px;
     width:220px;
+    text-align:left;
 }
 
 .about-button {
@@ -252,59 +255,3 @@ img {
         width:401px;
     }
 }
-
-/*For Modal 
-.is-hidden {
-    display: none;
-}
-
-.modal {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
-    padding: 20px;
-    border: 1px solid #888;
-    z-index: 1;
-}
-
-.modal-content {
-    text-align: center;
-    position: relative; 
-    font-family: DM Sans;
-}
-
-.modal-backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 80%;
-    height: 80%;
-    background-color: var(--bg-social);
-    z-index: 0;
-}
-
-.close {
-    position: absolute; 
-    top: -40px; 
-    right: -4%; 
-    cursor: pointer;
-    transition: color 0.3s; 
-    border: 2px solid var(--color-subtitle); 
-    border-radius: 50%; 
-    width: 20px; 
-    height: 20px; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    font-size: 15px;
-    color:var(--color-subtitle);
-}
-
-.close:hover {
-    color: var(--color-design-main) 
-}
-
-*/
