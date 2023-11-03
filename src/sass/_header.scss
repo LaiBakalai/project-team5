@@ -58,11 +58,7 @@
     margin: 0;
     margin-left: 0;
 
-
-
     @media screen and (min-width: 769px){
-
-
         display: flex;
         gap: 15px;
     }
@@ -130,7 +126,7 @@
     display: none;
     visibility: none;
 
-    @media screen and (min-width:481px) {
+    @media screen and (min-width:768px) {
         display: flex;
     }
 }
@@ -148,7 +144,7 @@
 
 
 .page-header .menu-toggle{
-    @media screen and (min-width: 900px) {
+    @media screen and (min-width: 769px) {
         visibility: hidden;
         display: none;
       }
