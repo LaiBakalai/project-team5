@@ -5,11 +5,11 @@
     overflow-x: hidden;
 }
 
-.hero-link {
-    text-decoration: none;
-    list-style: none;
-    color: inherit;
-}
+// .hero-link {
+//     text-decoration: none;
+//     list-style: none;
+//     color: inherit;
+// }
 
 .hero-title {
     font-family: Titan One;
@@ -51,6 +51,7 @@
 }
 
 .button-icon {
+    display: flex;
     height: 24px;
     border-radius: 20px;
     outline: none;
@@ -59,6 +60,11 @@
     font-size: 8px;
     font-family: DM Sans;
     cursor: pointer;
+
+    text-decoration: none;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero-button-1:hover,
